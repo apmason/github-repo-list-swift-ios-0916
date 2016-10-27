@@ -12,4 +12,23 @@ class ReposDataStore {
     
     static let sharedInstance = ReposDataStore()
     
+    var repositories: [GithubRepository] = []
+    
+    func getRepositoriesFromAPI(completion: @escaping () -> ()) {
+        repositories.removeAll()
+        
+        GithubAPIClient.getRepositories { (array) in
+            for repo in array {
+                self.repositories.append(GithubRepository.init(dictionary: repo))
+            }
+            
+            print(self.repositories)
+            completion()
+        }
+    
+        
+    }
+    
+
+    
 }

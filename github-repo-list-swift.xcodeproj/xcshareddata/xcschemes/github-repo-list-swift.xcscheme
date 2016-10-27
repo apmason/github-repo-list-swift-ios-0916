@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
-   version = "1.7">
+   LastUpgradeVersion = "0800"
+   version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -27,24 +27,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <PostActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Run Script"
-               scriptText = "LOG_PATH=`echo &quot;${BUILD_DIR}&quot; | sed &quot;s/Build\/Products/Logs\/Test/&quot;`&#10;&quot;${SRCROOT}/test_runner.sh&quot; &quot;$LOG_PATH&quot; &quot;${SRCROOT}&quot;">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "2B98D8591D22B6AD00905AE2"
-                     BuildableName = "github-repo-list-swift.app"
-                     BlueprintName = "github-repo-list-swift"
-                     ReferencedContainer = "container:github-repo-list-swift.xcodeproj">
-                  </BuildableReference>
-               </EnvironmentBuildable>
-            </ActionContent>
-         </ExecutionAction>
-      </PostActions>
       <Testables>
          <TestableReference
             skipped = "NO">

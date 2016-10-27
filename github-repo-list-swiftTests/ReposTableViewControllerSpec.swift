@@ -33,7 +33,7 @@ class ReposTableViewControllerSpec: QuickSpec {
         }
         describe("TableView Cells") {
             it("Should have the correct cells") {
-                expect(cell?.textLabel?.text).to(equal("wycats/merb-core"))
+                expect(cell?.textLabel?.text).to(equal("https://github.com/wycats/merb-core"))
             }
             
         }
